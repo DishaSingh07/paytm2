@@ -198,7 +198,8 @@ export const Users = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/api/v1/user/bulk?filter=" + filter)
+      // .get("http://localhost:3001/api/v1/user/bulk?filter=" + filter)
+      .get("https://paytm-jq5n.onrender.com/api/v1/user/bulk?filter=" + filter)
       .then((response) => {
         setUsers(response.data.user);
       });

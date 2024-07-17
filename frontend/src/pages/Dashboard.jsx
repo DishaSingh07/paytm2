@@ -25,7 +25,8 @@ export const Dashboard = () => {
     const fetchBalance = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3001/api/v1/account/balance",
+          // "http://localhost:3001/api/v1/account/balance",
+          "https://paytm-jq5n.onrender.com/api/v1/account/balance",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,

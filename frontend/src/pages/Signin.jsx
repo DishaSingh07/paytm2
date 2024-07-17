@@ -73,7 +73,7 @@ export const Signin = () => {
   const handleSignin = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3001/api/v1/user/signin",
+        "https://paytm-jq5n.onrender.com/api/v1/user/signin",
         { username, password },
         {
           headers: {
@@ -97,7 +97,7 @@ export const Signin = () => {
           <SubHeading label={"Enter your credentials to access your account"} />
           <InputBox
             onChange={(e) => setUsername(e.target.value)}
-            placeholder="harkirat@gmail.com"
+            placeholder="test1000@gmail.com"
             label={"Email"}
           />
           <InputBox
@@ -115,7 +115,7 @@ export const Signin = () => {
           <BottomWarning
             label={"Don't have an account?"}
             buttonText={"Sign up"}
-            to={"/signup"}
+            to={"/"}
           />
         </div>
       </div>

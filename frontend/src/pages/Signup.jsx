@@ -145,7 +145,7 @@ export const Signup = () => {
             onChange={(e) => {
               setUsername(e.target.value);
             }}
-            placeholder="harkirat@gmail.com"
+            placeholder="test1000@gmail.com"
             label={"Email"}
           />
           <InputBox
@@ -161,7 +161,7 @@ export const Signup = () => {
                 try {
                   const data = { username, firstName, lastName, password };
                   const response = await axios.post(
-                    "http://localhost:3001/api/v1/user/signup",
+                    "https://paytm-jq5n.onrender.com/api/v1/user/signup",
                     data,
                     {
                       headers: {
